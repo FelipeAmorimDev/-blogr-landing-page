@@ -24,15 +24,18 @@
 .nav-list{
   display: flex;
   gap: 20px;
+  
 }
 .nav-item{
   display: flex;
   align-items: center;
   gap: 8px;
+  
 }
 
 .right-list a:first-child{
   margin-right: 20px;
+
   
 }
 
@@ -48,9 +51,17 @@
 
 .link-item a:first-child{
   margin-right: 16px;
+ 
+}
+.nav .nav-item a{
+  transition: all .3s;
+}
+.nav .nav-item a:hover{
+  color: var(--cor-0);
+  border-bottom: 1px solid white;
 }
 
-.nav .nav-item a:hover{
+.right-list a:first-child:hover{
   color: var(--cor-0);
   border-bottom: 1px solid white;
 }
