@@ -50,6 +50,11 @@
   margin-right: 16px;
 }
 
+.nav .nav-item a:hover{
+  color: var(--cor-0);
+  border-bottom: 1px solid white;
+}
+
 @media (max-width:1000px){
   .nav{
     display: none;
