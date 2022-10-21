@@ -16,7 +16,7 @@
 
 .info-containt-2-content {
   position: relative;
-  padding: 120px 200px;
+  padding: 100px 200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -37,7 +37,11 @@
   padding: 20px;
 }
 
-@media (max-width:1300px) {}
+@media (max-width:1300px) {
+  .info-container-2 div:first-child img{
+    left: 0px;
+  }
+}
 
 @media (max-width:1200px) {
   .container-2-text p.cor-4 {
