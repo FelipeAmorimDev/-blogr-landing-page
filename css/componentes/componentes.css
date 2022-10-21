@@ -14,12 +14,24 @@
 
 }
 
+.botao-1:hover{
+  background-color:var(--cor-p2);
+  color: var(--cor-4);
+  border: 1px solid var(--cor-p2);
+}
+
 .botao-2 {
 
   border: 1px solid white;
   padding: 15px 40px;
   border-radius: 30px;
 
+}
+
+.botao-2:hover {
+  background-color: var(--cor-0);
+  color: var(--cor-p2);
+  border: 1px solid white;
 }
 
 @media (max-width:600px){
