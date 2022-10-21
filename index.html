@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="left-list">
+        <img src="./images/logo.svg" alt="Blogr">
+
+        <nav class="nav" aria-label="nav-primaria">
+          <ul class="nav-list font-2-l-b  link-colors">
+            <li class="nav-item">
+              <a href="#">Product</a>
+              <img src="./images/icon-arrow-light.svg" alt="">
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Company</a>
+              <img src="./images/icon-arrow-light.svg" alt="">
+            </li>
+
+            <li class="nav-item">
+              <a href="#">Connect</a>
+              <img src="./images/icon-arrow-light.svg" alt="">
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+      <div class="right-list font-2-l-b link-colors">
+
+        <a href="#">Login</a>
+        <a href="#" class="header-grad-2 botao-1">Sign Up</a>
+      </div>
+
+    </div>
+
+    <div class="header-content">
+      <h1 class="font-1-xxl cor-0">A modern publishing platform</h1>
+      <p class="font-1-l cor-0">Grow your audience and build your online brand</p>
+      <ul class="link-list-hc font-2-l-b">
+        <li class="link-item">
+          <a href="#" class="cor-p1 botao-1">Start for Free</a>
+          <a href="#" class="cor-0 botao-2">Learn More</a>
+        </li>
+      </ul>
+    </div>
+
+
+  </header>
+
+  <main class="main">
+    <article class="info-container-1">
+      <h2 class="font-1-xl cor-p3">Designed for the future</h2>
+      <div class="info-general">
+        <div class="info-content">
+          <div class="text">
+            <h3 class="font-1-x cor-p3 mb1">Introducing an extensible editor</h3>
+            <p class="mb3 cor-2">Blogr features an exceedingly intuitive interface which lets you focus on one thing:
+              creating
+              content. The
+              editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+              videos,
+              and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the
+              looks
+              of a blog.</p>
+          </div>
+
+          <div class="text">
+            <h3 class="font-1-x cor-p3 mb1">Robust content management</h3>
+            <p class="cor-2">Flexible content management enables users to easily move through posts. Increase the
+              usability
+              of your blog
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+              control.
+            </p>
+          </div>
+
+        </div>
+        <picture class="picture-1">
+          <source media="(min-width:600px)" srcset="./images/illustration-editor-desktop.svg">
+          <img id="ilustrator-bg" src="./images/illustration-editor-mobile.svg" alt="">
+        </picture>
+      </div>
+    </article>
+
+    <article class="info-container-2">
+      <div class="info-containt-2-content">
+        <div>
+          <img src="./images/illustration-phones.svg" alt="" style="">
+        </div>
+        <div class="container-2-text">
+          <h2 class="font-1-xl cor-0">State of the Art Infrastructure</h2>
+          <p class="cor-4">With reliability and speed in mind, worldwide data centers provide the backbone for
+            ultra-fast connectivity.
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="info-container-3">
+      <div class="more-info-content">
+        <picture>
+          <source media="(min-width:900px)" srcset="./images/illustration-laptop-desktop.svg">
+          <img src="./images/illustration-laptop-mobile.svg" alt="">
+        </picture>
+        <div class="more-info-text">
+          <div class="text-item">
+            <h3 class="font-1-x cor-p3">Free, open, simple</h3>
+            <p class="mb3">Blogr is a free and open source application backed by a large community of helpful developers. It
+              supports features such as code syntax highlighting, RSS feeds, social media integration, third-party
+              commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively
+              easy to learn.</p>
+          </div>
+
+          <div class="text-item">
+            <h3 class="font-1-x cor-p3">Powerful tooling</h3>
+            <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and
+              deployment a breeze, but capable of producing even the most complicated sites.</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+}
+
+.botao-1 {
+
+  background-color: var(--cor-0);
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 1px solid white;
+  
+
+}
+
+.botao-2 {
+
+  border: 1px solid white;
+  padding: 15px 40px;
+  border-radius: 30px;
+
+}
+
+@media (max-width:600px){
+  .botao-1 {
+  padding: 12px 20px;
+  }
+
+  .botao-2 {
+    padding: 12px 20px;
+    }
+}

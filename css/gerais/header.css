@@ -1,0 +1,75 @@
+.header{
+  display: grid;
+  gap: 132px;
+  
+  margin: 0 auto;
+  background-image: url("../../images/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, rgba(255,143,113,1) 0%, rgba(255,62,85,1) 100%);
+  background-position: center left ;
+  padding: 63px 167px;
+  border-bottom-left-radius: 100px;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-list{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-list{
+  display: flex;
+  gap: 20px;
+}
+.nav-item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right-list a:first-child{
+  margin-right: 20px;
+  
+}
+
+.header-content{
+  place-self: center;
+  padding-bottom: 155px;
+  text-align: center;
+}
+
+.header-content > p {
+  margin-bottom: 44px;
+}
+
+.link-item a:first-child{
+  margin-right: 16px;
+}
+
+@media (max-width:1000px){
+  .nav{
+    display: none;
+  }
+
+  .right-list{
+    display: none;
+  }
+}
+
+@media (max-width:600px){
+  .header{
+    padding: 20px;
+  }
+ 
+}
+
+@media (max-width:700px){
+  .link-item a:first-child{
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
