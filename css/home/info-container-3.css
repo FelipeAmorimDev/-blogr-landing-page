@@ -50,8 +50,8 @@
     width: 200px;
   }
   .more-info-content picture img{
-    width: 320px;
-    left: 25px;
+    width: 100%;
+    left: 0px;
   }
 }
 @media (max-width:450px){
