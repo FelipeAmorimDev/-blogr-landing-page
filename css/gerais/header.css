@@ -71,7 +71,7 @@
 
 .dropdown-content {
   display: none;
-  
+  position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
   padding: 20px;
@@ -106,17 +106,27 @@
 .icones-div img{
   display: inline;
 }
+
+@media (min-width:1000px){
+  .nav-list{
+    
+  }
+}
 @media (max-width:1000px){
   .nav{
     position: absolute;
     top:90px;
-    left: 45px;
-    width:calc(100% - 40px);
+    left: 60px;
+    width:calc(100% - 60px);
     visibility: hidden;
     
    
      
   }
+  .dropdown-content {
+    position: static;
+  }
+
 
   #connect-link{
     place-self: center;
@@ -136,7 +146,8 @@
 
   .nav-item{
     
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .right-list{
