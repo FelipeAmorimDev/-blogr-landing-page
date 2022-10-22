@@ -1,11 +1,11 @@
 const connect = document.getElementById("myDropdown")
 const company = document.getElementById("myDropdown1")
 const product= document.getElementById("myDropdown2")
-
+const menuHam = document.querySelector(".menu-hamburguer")
 const productLink = document.getElementById("product-link")
 const companyLink = document.getElementById("company-link")
 const connectLink = document.getElementById("connect-link")
-
+const navMenu = document.querySelector(".nav")
 const arrowItem2 = document.querySelector("#company-link + img")
 const arrowItem = document.querySelector("#product-link + img")
 const arrowItem1 = document.querySelector("#connect-link + img")
@@ -13,7 +13,17 @@ const arrowItem1 = document.querySelector("#connect-link + img")
 productLink.addEventListener("click",productDrop)
 companyLink.addEventListener("click",companyDrop)
 connectLink.addEventListener("click",connectDrop)
-
+menuHam.addEventListener("click",() =>{
+  console.log("teste");
+  if(navMenu.classList.contains("show")){
+    navMenu.style = "visibility: hidden;"
+    navMenu.classList.remove("show")
+  }
+  else{
+    navMenu.style = "visibility: visible;"
+    navMenu.classList.add("show")
+  }
+})
 
 function connectDrop() {
   if(product.classList.contains("show") || company.classList.contains("show")){
@@ -58,7 +68,7 @@ function productDrop() {
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.nav-item > span')) {
+  if (!event.target.matches('.nav-item > .icones-div > span')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
