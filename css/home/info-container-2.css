@@ -3,8 +3,8 @@
   background: url("../../images/bg-pattern-circles.svg") -140px -500px, linear-gradient(135deg, #2D2E40 0%, #3F4164 100%);
   background-repeat: no-repeat;
 
-  border-top-right-radius: 140px;
-  border-bottom-left-radius: 140px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
 
 }
 
