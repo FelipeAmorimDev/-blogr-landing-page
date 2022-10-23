@@ -9,62 +9,64 @@
 - Very dark grayish blue (body copy): hsl(207, 13%, 34%)
 - Very dark black blue (footer background): hsl(240, 10%, 16%) */
 
-:root{
-  --cor-p1:hsl(356, 100%, 66%);
-  --cor-p2:hsl(355, 100%, 74%);
-  --cor-p3:hsl(208, 49%, 24%);
+:root {
+  --cor-p1: hsl(356, 100%, 66%);
+  --cor-p2: hsl(355, 100%, 74%);
+  --cor-p3: hsl(208, 49%, 24%);
 
-  --bg-body:#f2f2f2;
-  --link-colors : rgba(255, 255, 255, .8);
-  --cor-0:hsl(0, 0%, 100%);
-  --cor-1:hsl(240, 2%, 79%);
-  --cor-2:hsl(207, 13%, 34%);
-  --cor-3:hsl(240, 10%, 16%);
-  --cor-4:#FFFFFF;
-  
-  --header-grad-1:#FF8F71;
-  --header-grad-2:#FF3E55;
+  --bg-body: #f2f2f2;
 
-  --body-grad-1:#2D2E40;
-  --body-grad-2:#3F4164;
+  --link-colors: rgba(255, 255, 255, .8);
+  --cor-0: hsl(0, 0%, 100%);
+  --cor-1: hsl(240, 2%, 79%);
+  --cor-2: hsl(207, 13%, 34%);
+  --cor-3: hsl(240, 10%, 16%);
+  --cor-4: #FFFFFF;
+
+  --header-grad-1: #FF8F71;
+  --header-grad-2: #FF3E55;
+
+  --body-grad-1: #2D2E40;
+  --body-grad-2: #3F4164;
 
 }
 
-.header-grad-2{
+.header-grad-2 {
   color: var(--header-grad-2);
 }
 
-.link-colors{
+.link-colors {
   color: var(--link-colors);
 }
-.cor-0{
-  color:var(--cor-0)
+
+.cor-0 {
+  color: var(--cor-0)
 }
 
-.cor-1{
-  color:var(--cor-1)
+.cor-1 {
+  color: var(--cor-1)
 }
 
-.cor-2{
-  color:var(--cor-2)
+.cor-2 {
+  color: var(--cor-2)
 }
 
-.cor-3{
-  color:var(--cor-3)
+.cor-3 {
+  color: var(--cor-3)
 }
 
-.cor-4{
+.cor-4 {
   color: var(--cor-4);
 }
 
-.cor-p1{
+.cor-p1 {
   color: var(--cor-p1);
 }
 
-.cor-p2{
+.cor-p2 {
   color: var(--cor-p2);
 }
 
-.cor-p3{
+.cor-p3 {
   color: var(--cor-p3);
 }

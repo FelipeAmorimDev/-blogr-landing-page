@@ -1,86 +1,88 @@
-const connect = document.getElementById("myDropdown")
-const company = document.getElementById("myDropdown1")
-const product= document.getElementById("myDropdown2")
-const menuHam = document.querySelector(".menu-hamburguer")
-const productLink = document.getElementById("product-link")
-const companyLink = document.getElementById("company-link")
-const connectLink = document.getElementById("connect-link")
-const navMenu = document.querySelector(".nav")
-const arrowItem2 = document.querySelector("#company-link + img")
-const arrowItem = document.querySelector("#product-link + img")
-const arrowItem1 = document.querySelector("#connect-link + img")
+const menu = document.querySelector(".nav")
 
-productLink.addEventListener("click",productDrop)
-companyLink.addEventListener("click",companyDrop)
-connectLink.addEventListener("click",connectDrop)
-menuHam.addEventListener("click",() =>{
-  console.log("teste");
-  if(navMenu.classList.contains("show")){
-    navMenu.style = "visibility: hidden;"
-    navMenu.classList.remove("show")
+const connectDrop = document.querySelector("#connect-dropdown")
+const companyDrop = document.querySelector("#company-dropdown")
+const productDrop = document.querySelector("#product-dropdown")
+
+const companyButton = document.querySelector("#company-link")
+const connectButton = document.querySelector("#connect-link")
+const productButton = document.querySelector("#product-link")
+
+const connectArrow = document.querySelector("#connect-link i")
+const companyArrow = document.querySelector("#company-link i")
+const productArrow = document.querySelector("#product-link i")
+
+function closeDrop() {
+
+  const dropDown = document.getElementsByClassName("dropdown")
+  for (let i = 0; i < dropDown.length; i++) {
+    if (dropDown[i].classList.contains("show")) {
+      dropDown[i].classList.remove("show")
+    }
+    
   }
-  else{
-    navMenu.style = "visibility: visible;"
-    navMenu.classList.add("show")
-  }
-})
 
-function connectDrop() {
-  if(product.classList.contains("show") || company.classList.contains("show")){
-    product.classList.remove("show")
-    company.classList.remove("show")
-    arrowItem1.style = "transform: rotate(0deg);"
-    arrowItem.style = "transform: rotate(0deg);"
-    arrowItem2.style = "transform: rotate(0deg);"
-
-  } 
- 
-  document.getElementById("myDropdown").classList.toggle("show");
-  arrowItem1.style = "transform: rotate(180deg);"
-  
-}
-
-function companyDrop() {
-  if(connect.classList.contains("show") || product.classList.contains("show")){
-    product.classList.remove("show")
-    connect.classList.remove("show")
-    arrowItem1.style = "transform: rotate(0deg);"
-    arrowItem.style = "transform: rotate(0deg);"
-  }
-  document.getElementById("myDropdown1").classList.toggle("show");
-  arrowItem2.style = "transform: rotate(180deg);"
-   
+  connectArrow.style = "transform: rotate(0deg);";
+  companyArrow.style = "transform: rotate(0deg);";
+  productArrow.style = "transform: rotate(0deg);";
 
 }
 
-function productDrop() {
-  if(connect.classList.contains("show") || company.classList.contains("show")){
-    connect.classList.remove("show")
-    company.classList.remove("show")
-    arrowItem1.style = "transform: rotate(0deg);"
-    arrowItem2.style = "transform: rotate(0deg);"
+function mostrarConnect() {
+
+  if (connectDrop.classList.contains("show")) {
+      closeDrop()
   }
-  document.getElementById("myDropdown2").classList.toggle("show");
-  arrowItem.style = "transform: rotate(180deg);"
+  else {
+    closeDrop()
+    connectDrop.classList.add("show")
+    connectArrow.style = "transform: rotate(180deg);";
+  }
+
 }
-  
+
+function mostrarCompany() {
+
+  if (companyDrop.classList.contains("show")) {
+   closeDrop()
+  }
+  else {
+    closeDrop()
+    companyDrop.classList.add("show")
+    companyArrow.style = "transform: rotate(180deg);"
+   }
+
+}
+
+function mostrarProduct() {
+  if (productDrop.classList.contains("show")) {
+        closeDrop()
+}
+  else {
+    closeDrop()
+    productDrop.classList.add("show")
+    productArrow.style = "transform: rotate(180deg);"
+}
+
+}
+
+function openMenu() {
+  menu.classList.toggle("show")
+}
 
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.nav-item > .icones-div > span')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+
+
+window.onclick = function (event) {
+  if (!event.target.matches('.title-drop')) {
+    var dropdowns = document.getElementsByClassName("dropdown");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-        arrowItem1.style = "transform: rotate(0deg);"
-        arrowItem.style = "transform: rotate(0deg);"
-        arrowItem2.style = "transform: rotate(0deg);"
-
+       closeDrop()
       }
     }
   }
-  
+
 }

@@ -21,6 +21,7 @@
       color: hsl(228, 45%, 44%);
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -29,118 +30,109 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-top">
+  <header class="header-bg">
+    <div class="header-container">
+
       <div class="left-list">
         <img src="./images/logo.svg" alt="Blogr">
 
-        <nav class="nav" aria-label="nav-primaria">
-          <ul class="nav-list font-2-l-b  link-colors">
-            <li class="nav-item">
-              <div class="icones-div">
-              <span id="product-link">Product</span>
-              <picture>
-                <source media="(min-width:1000px )" srcset="./images/icon-arrow-light.svg">
-              <img src="./images/icon-arrow-dark.svg" alt="">
-            </picture>
-          </div>
-              <div id="myDropdown2" class="dropdown-content">
-                <a href="./">Overview</a>
-                <a href="#">Pricing</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Features</a>
-                <a href="#">Integrations</a>
-              </div>
-            </li>
+        <nav class="nav font-2-l-b" aria-label="nav-primaria" >
+          <ul class="nav-list link-colors">
+            <ul class="list-principal">
+              <li>
+                <a href="#" class="title-drop" id="product-link" onclick="mostrarProduct()">Product  <i class="fa fa-caret-down"></i></a>
+                
+              
+                <ul id="product-dropdown" class="dropdown">
+                  <li><a href="">Overview</a></li>
+                  <li><a href="">Pricing</a></li>
+                  <li><a href="">Marketplace</a></li>
+                  <li><a href="">Features</a></li>
+                  <li><a href="">Integrations</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="title-drop" id="company-link" onclick="mostrarCompany()">Company  <i class="fa fa-caret-down"></i></a>
+               
+                <ul id="company-dropdown" class="dropdown">
+                  <li><a href="">About</a></li>
+                  <li><a href="">Team</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Careers</a></li>
+                </ul>
+              </li>
 
-            <li class="nav-item">
-              <div class="icones-div">
-              <span id="company-link">Company</span>
-              <picture>
-                <source media="(min-width:1000px )" srcset="./images/icon-arrow-light.svg">
-              <img src="./images/icon-arrow-dark.svg" alt="">
-            </picture>
-          </div>
-              <div id="myDropdown1" class="dropdown-content">
-                <a href="#">About</a>
-                <a href="#">Team</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
+              <li><a class="title-drop" id="connect-link" onclick="mostrarConnect()">Connect  <i class="fa fa-caret-down"></i></a>
+   
+                <ul id="connect-dropdown" class="dropdown">
+                  <li><a href="">Contact</a></li>
+                  <li><a href="">Newsletter</a></li>
+                  <li><a href="">LinkedIn</a></li>
 
-              </div>
-            </li>
-
-            <li class="nav-item" >
-              <div class="icones-div">
-              <span id="connect-link">Connect</span>
-              <picture>
-                <source media="(min-width:1000px )" srcset="./images/icon-arrow-light.svg">
-              <img src="./images/icon-arrow-dark.svg" alt="">
-            </picture>
-          </div>
-              <div id="myDropdown" class="dropdown-content" >
-                <a href="#">Contact</a>
-                <a href="#">Newsletter</a>
-                <a href="#">LinkedIn</a>
-              </div>
-            </li>
-
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-secundaria">
+              <li><a href="#">Login</a></li>
+              <li><a href="#" id="signup"class="botao-1 cor-p1">Sign Up</a></li>
+            </ul>
           </ul>
+
         </nav>
+        <img class="menu-hamburguer" src="./images/icon-hamburger.svg" alt="" onclick="openMenu()">
       </div>
-      <img  class="menu-hamburguer"src="./images/icon-hamburger.svg" alt="">
-      <div class="right-list font-2-l-b link-colors">
 
-        <a href="#">Login</a>
-        <a href="#" class="header-grad-2 botao-1">Sign Up</a>
+
+
+
+
+      <div class="header-content">
+        <h1 class="font-1-xxl cor-0">A modern publishing platform</h1>
+        <p class="font-1-l cor-0">Grow your audience and build your online brand</p>
+        <ul class="link-list-hc font-2-l-b">
+          <li class="link-item">
+            <a href="#" class="cor-p1 botao-1">Start for Free</a>
+            <a href="#" class="cor-0 botao-2">Learn More</a>
+          </li>
+        </ul>
       </div>
 
     </div>
-
-    <div class="header-content">
-      <h1 class="font-1-xxl cor-0">A modern publishing platform</h1>
-      <p class="font-1-l cor-0">Grow your audience and build your online brand</p>
-      <ul class="link-list-hc font-2-l-b">
-        <li class="link-item">
-          <a href="#" class="cor-p1 botao-1">Start for Free</a>
-          <a href="#" class="cor-0 botao-2">Learn More</a>
-        </li>
-      </ul>
-    </div>
-
-
   </header>
 
   <main class="main">
-    <article class="info-container-1">
-      <h2 class="font-1-xl cor-p3">Designed for the future</h2>
-      <div class="info-general">
-        <div class="info-content">
-          <div class="text">
-            <h3 class="font-1-x cor-p3 mb1">Introducing an extensible editor</h3>
-            <p class="mb3 cor-2">Blogr features an exceedingly intuitive interface which lets you focus on one thing:
-              creating
-              content. The
-              editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
-              videos,
-              and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the
-              looks
-              of a blog.</p>
-          </div>
+    <article class="info-container-bg">
+      <div class="main-info-container">
+        <h2 class="font-1-xl cor-p3 mb5">Designed for the future</h2>
+        <div class="info-general">
+          <div class="info-content">
+            <div class="text">
+              <h3 class="font-1-x cor-p3 mb1">Introducing an extensible editor</h3>
+              <p class="mb3 cor-2">Blogr features an exceedingly intuitive interface which lets you focus on one thing:
+                creating
+                content. The
+                editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+                videos,
+                and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the
+                looks
+                of a blog.</p>
+            </div>
 
-          <div class="text">
-            <h3 class="font-1-x cor-p3 mb1">Robust content management</h3>
-            <p class="cor-2">Flexible content management enables users to easily move through posts. Increase the
-              usability
-              of your blog
-              by adding customized categories, sections, format, or flow. With this functionality, you’re in full
-              control.
-            </p>
+            <div class="text">
+              <h3 class="font-1-x cor-p3 mb1">Robust content management</h3>
+              <p class="cor-2">Flexible content management enables users to easily move through posts. Increase the
+                usability
+                of your blog
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full
+                control.
+              </p>
+            </div>
+
           </div>
 
         </div>
         <picture class="picture-1">
-          <source media="(min-width:600px)" srcset="./images/illustration-editor-desktop.svg">
+          <source media="(min-width:1200px)" srcset="./images/illustration-editor-desktop.svg">
           <img id="ilustrator-bg" src="./images/illustration-editor-mobile.svg" alt="">
         </picture>
       </div>
@@ -149,7 +141,7 @@
     <article class="info-container-2">
       <div class="info-containt-2-content">
         <div>
-          <img src="./images/illustration-phones.svg" alt="" style="">
+          <img src="./images/illustration-phones.svg" alt="">
         </div>
         <div class="container-2-text">
           <h2 class="font-1-xl cor-0">State of the Art Infrastructure</h2>
@@ -162,11 +154,12 @@
     </article>
 
     <article class="info-container-3">
+      <picture>
+        <source media="(min-width:900px)" srcset="./images/illustration-laptop-desktop.svg">
+        <img src="./images/illustration-laptop-mobile.svg" alt="">
+      </picture>
       <div class="more-info-content">
-        <picture>
-          <source media="(min-width:900px)" srcset="./images/illustration-laptop-desktop.svg">
-          <img src="./images/illustration-laptop-mobile.svg" alt="">
-        </picture>
+
         <div class="more-info-text">
           <div class="text-item">
             <h3 class="font-1-x cor-p3">Free, open, simple</h3>
@@ -189,65 +182,66 @@
 
   </main>
 
-  <footer class="footer cor-4">
-    <div class="logo-footer">
-      <img src="./images/logo.svg" alt="">
-    </div>
+  <footer class="footer-bg cor-4">
+    <div class="footer-container">
+      <div class="logo-footer">
+        <img src="./images/logo.svg" alt="">
+      </div>
 
-    <div class="link-list-container">
-      <h4 class="font-2-s-b">Product</h4>
-      <ul class="link-list font-2-s link-colors">
-        <li class="link-itemfr">
-          <a href="">Overview</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Pricing</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Marketplace</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Features</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Integrations</a>
-        </li>
-      </ul>
-    </div>
+      <div class="link-list-container">
+        <h4 class="font-2-s-b">Product</h4>
+        <ul class="link-list font-2-s link-colors">
+          <li class="link-itemfr">
+            <a href="">Overview</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Pricing</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Marketplace</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Features</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Integrations</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="link-list-container">
-      <h4 class="font-2-s-b">Company</h4>
-      <ul class="link-list font-2-s link-colors">
-        <li class="link-itemfr">
-          <a href="">About</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Team</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Blog</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Careers</a>
-        </li>
-      </ul>
-    </div>
+      <div class="link-list-container">
+        <h4 class="font-2-s-b">Company</h4>
+        <ul class="link-list font-2-s link-colors">
+          <li class="link-itemfr">
+            <a href="">About</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Team</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Blog</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Careers</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="link-list-container">
-      <h4 class="font-2-s-b">Connect</h4>
-      <ul class="link-list font-2-s link-colors">
-        <li class="link-itemfr">
-          <a href="">Contact</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">Newsletter</a>
-        </li>
-        <li class="link-itemfr">
-          <a href="">LinkedIn</a>
-        </li>
-      </ul>
+      <div class="link-list-container">
+        <h4 class="font-2-s-b">Connect</h4>
+        <ul class="link-list font-2-s link-colors">
+          <li class="link-itemfr">
+            <a href="">Contact</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">Newsletter</a>
+          </li>
+          <li class="link-itemfr">
+            <a href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
-
   </footer>
 
   <div class="attribution">

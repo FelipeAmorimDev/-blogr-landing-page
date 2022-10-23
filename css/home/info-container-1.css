@@ -1,105 +1,104 @@
-.info-container-1{
+.info-container-bg {
+  overflow: hidden;
+}
+
+.main-info-container {
+  max-width: 1440px;
   display: grid;
   grid-template-columns: 1fr;
- padding-right: 0px;
-  margin: 0 auto;
+  margin: 0 auto 140px;
   align-items: center;
   position: relative;
   gap: 0 200px;
- }
+  padding: 20px;
 
- .info-container-1 h2{
- 
- text-align: center;
-  margin-top: 150px;
-  
-  
- }
+}
 
- .info-general{
-  padding: 0 200px;
-  padding-right: 0px;
+.main-info-container h2 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.info-general {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
-  
-  
- }
+}
 
- .info-content{
-  padding: 30px;
- }
-
- .text p{
+.text p {
   max-width: 50ch;
- }
-
-#ilustrator-bg{
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-
-}
-.picture-1{
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 
-@media(max-width:1200px){
-  .info-general{
-   
+#ilustrator-bg {
+  position: absolute;
+  top: -640px;
+  right: -460px;
+  max-width: 1200px;
+}
+
+.picture-1 {
+  position: relative;
+}
+
+@media(max-width:1200px) {
+
+  .info-general {
     grid-template-columns: 1fr;
-    padding: 0px;
-    margin-bottom: 300px;
-    
-    
-   }
+    margin-bottom: 150px;
+    align-content: center;
+  }
 
-   .text{
+  .text {
     text-align: center;
-   }
+  }
 
-   .text p{
+  .text p {
     max-width: initial;
-   }
-   #ilustrator-bg{
-    height:initial;
-    object-fit: initial;
-    object-position: initial;
-    order: 0;
-  
-  }
-  .picture-1{
-    object-fit:initial;
-    place-self: center;
-    width: 50%;
-    order: -5;
   }
 
-  .info-container-1 h2{
- 
-    order: 0;
-     
-     
-    }
+  #ilustrator-bg {
+    width: 100%;
+    position: static;
+    display: block;
+    max-width: 100%;
 }
 
-@media (max-width:600px){
-  .info-container-1 h2{
- 
-    
-     margin-top: 100px;
-     
-     
-    }
-    #ilustrator-bg{
-     width: 100%; 
-    }
-    .picture-1{
-      width: 100%;
-      
-      
-    }
-  
+  .picture-1 {
+    grid-row: 2;
+    place-self: center;
+    max-width: 50%;
+  }
+
+  .info-container-1 h2 {
+    order: 0;
+  }
+
+}
+
+@media (max-width:800px) {
+
+  .info-general {
+    margin-bottom: 100px;
+  }
+
+}
+
+@media (max-width:600px) {
+
+  .main-info-container h2 {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .main-info-container {
+    margin-bottom: 80px;
+  }
+
+  .info-general {
+    margin-bottom: 50px;
+  }
+
+  .picture-1 {
+    max-width: calc(100% - 40px);
+  }
+
 }
